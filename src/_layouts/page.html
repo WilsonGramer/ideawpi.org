@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>
+            {% if title %} {{ title }} — {% endif %} Inspiring and Developing Educators Association
+            at WPI
+        </title>
+
+        <link rel="preconnect" href="https://rsms.me/" />
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+
+        <link rel="stylesheet" href="{{ '/styles/index.css' | url }}" />
+    </head>
+
+    <body class="w-full max-w-4xl mx-auto my-12">
+        <nav class="flex flex-row items-center gap-4 mx-6 mb-10">
+            <a href="/">Home</a>
+            <a href="/join">Join</a>
+            <a href="/people">People</a>
+            <a href="/events">Events</a>
+            <a href="/resources">Resources</a>
+        </nav>
+
+        <div class="mx-6 text-slate-900 dark:text-slate-50">
+            <section class="banner" style="background-image: url({{ banner_image }})">
+                {% if banner_content %} {{ banner_content | safe }} {% elseif title %}
+                <h1>{{ title }}</h1>
+                {% endif %}
+            </section>
+
+            {{ content | safe }}
+        </div>
+    </body>
+</html>
