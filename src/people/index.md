@@ -72,7 +72,7 @@ Her other interests include art, traveling, and dogs.
 
 ---
 
-<img src="./shuling-lin.jpg" width="{{ image_size }}">
+<img src="./shuling-lin.png" width="{{ image_size }}">
 
 ## Shuling Lin (she/her)
 
