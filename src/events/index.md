@@ -1,6 +1,6 @@
 ---
 layout: page
-title: People
+title: Events
 banner_image: /images/join-background.jpg
 ---
 

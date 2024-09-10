@@ -42,3 +42,9 @@ p {
 .banner h1:not(.no-banner-font) {
     @apply text-4xl;
 }
+
+hr {
+    border: none;
+    border-top: 2px solid gray;
+    @apply my-8;
+}
